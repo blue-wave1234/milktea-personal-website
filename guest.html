@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guest Visitor Book</title>
+        <style>
+            body { 
+                margin:0; 
+                background-color:#fff7fa; 
+                color:#66444f; 
+                font-family:Tahoma, sans-serif; 
+                font-size:18px; }
+
+            .page { 
+                width:86%; 
+                max-width:850px; 
+                margin:30px auto; }
+
+            header { 
+                background-color:#fffafb; 
+                padding:28px; 
+                text-align:center; 
+                border:2px solid #e6c2cf; }
+
+            h1 { 
+                font-family:Georgia, serif; 
+                font-size:36px; }
+
+            nav { 
+                background-color:#86586a; 
+                padding:16px; 
+                text-align:center; }
+
+            nav a { 
+                display:inline-block; 
+                color:#fffafb; 
+                margin:6px 10px; }
+
+            main { 
+                background-color:#ffffff; 
+                padding:24px; }
+
+            .form-section { 
+                border:1px solid #eed5df; 
+                background-color:#fff5f8; 
+                padding:20px; 
+                margin-bottom:22px; }
+
+            h2 { 
+                font-family:Georgia, serif; 
+                color:#86586a; }
+
+            .field { 
+                margin-bottom:18px; }
+
+            .text-control { 
+                width:90%; 
+                padding:10px; 
+                border:1px solid #d9afbf; 
+                background-color:#ffffff; 
+                color:#66444f; 
+                font-family:Tahoma, sans-serif; 
+                font-size:16px; }
+
+            .choice { 
+                margin:10px 0; }
+
+            .submit-button { 
+                padding:14px 22px; 
+                background-color:#86586a; 
+                color:white; 
+                border:2px solid #86586a;
+                font-size:17px; }
+
+            .preview-button { 
+                padding:14px 22px;
+                 background-color:#f9e5ed; 
+                 color:#66444f; 
+                 border:2px solid #d9afbf; 
+                 font-size:17px; }
+
+            .note { 
+                background-color:#f9e5ed; 
+                padding:14px; }
+
+            footer { 
+                background-color:#86586a; 
+                padding:20px; 
+                color:#fffafb; 
+                text-align:center; }
+
+            footer a { 
+                color:#fffafb; }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <header id="top">
+                <h1>My Guestbook</h1>
+                <p>A little hello from you would make my day.</p>
+            </header>
+            <nav>
+                <a href="index.html">HOME</a>  
+                <a href="gallery.html">MY GALLERY</a>  
+                <a href="hobbies.html">MY HOBBY</a>  
+                <a href="goals.html">MY GOALS</a>  
+                <a href="works.html">MY WORKS</a>  
+                <a href="blog.html">MY BLOG</a>  
+                <a href="guest.html">TALK WITH ME~OW</a> 
+            </nav>
+            <main>
+                <p>Hi, visitor! I'm Milktea. Tell me a little about yourself, choose your favorite parts of my website, and leave a friendly message.</p>
+                <p class="note"><b>Classroom practice:</b> This form does not save entries. Use made-up details and a made-up password. The Preview button is a demonstration for a later JavaScript lesson.</p>
+                <!-- No form-handler is connected. POST keeps practice values out of the URL. -->
+                <form action="guest.html" method="post">
+                    <section class="form-section">
+                        <h2>01 — A Little About You</h2>
+                        <div class="field">
+                            <label for="visitor-name">Visitor's name:</label><br>
+                            <input class="text-control" type="text" id="visitor-name" name="visitorName">
+                        </div>
+                        <div class="field">
+                            <label for="visitor-email">Email address:</label><br>
+                            <input class="text-control" type="email" id="visitor-email" name="visitorEmail">
+                        </div>
+                        <div class="field">
+                            <label for="practice-password">Practice password (made-up only):</label><br>
+                            <input class="text-control" type="password" id="practice-password" name="practicePassword">
+                        </div>
+                        <div class="field">
+                            <label for="visit-date">Visit date:</label><br>
+                            <input class="text-control" type="date" id="visit-date" name="visitDate">
+                        </div>
+                    </section>
+                    <section class="form-section">
+                        <h2>02 — Your Favorite Little Things</h2>
+                        <p><b>Which page is your favorite? Choose one.</b></p>
+                        <!-- Same name groups these radio buttons. Each ID and value is different. -->
+                        <div class="choice"><input type="radio" id="page-about" name="favoritePage" value="about"><label for="page-about"> About Me</label></div>
+                        <div class="choice"><input type="radio" id="page-gallery" name="favoritePage" value="gallery"><label for="page-gallery"> My Gallery</label></div>
+                        <div class="choice"><input type="radio" id="page-goals" name="favoritePage" value="goals"><label for="page-goals"> My Goals and Dreams</label></div>
+                        <div class="choice"><input type="radio" id="page-blog" name="favoritePage" value="blog"><label for="page-blog"> My Personal Blog</label></div>
+                        <hr>
+                        <p><b>What did you enjoy? Choose as many as you like.</b></p>
+                        <div class="choice"><input type="checkbox" id="interest-photos" name="enjoyedPhotos" value="photos"><label for="interest-photos"> Photo memories</label></div>
+                        <div class="choice"><input type="checkbox" id="interest-pets" name="enjoyedPets" value="pets"><label for="interest-pets"> Milktea and friends</label></div>
+                        <div class="choice"><input type="checkbox" id="interest-hobbies" name="enjoyedHobbies" value="hobbies"><label for="interest-hobbies"> Hobbies and favorites</label></div>
+                        <div class="choice"><input type="checkbox" id="interest-coding" name="enjoyedCoding" value="coding"><label for="interest-coding"> Coding and learning stories</label></div>
+                    </section>
+                    <section class="form-section">
+                        <h2>03 — Leave a Little Hello</h2>
+                        <div class="field">
+                            <label for="found-through">How did you find my website?</label><br>
+                            <select class="text-control" id="found-through" name="foundThrough">
+                                <option value="" selected>Choose one</option>
+                                <option value="classmate">A classmate</option>
+                                <option value="teacher">My teacher</option>
+                                <option value="friend">A friend</option>
+                                <option value="website-link">A website link</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="visitor-message">Your message or feedback:</label><br>
+                            <textarea class="text-control" id="visitor-message" name="visitorMessage" rows="6" cols="40"></textarea>
+                        </div>
+                        <p><input class="submit-button" type="submit" value="Sign My Guestbook"></p>
+                        <p><button class="preview-button" type="button">Preview Message</button></p>
+                        <p><small>HTML practice only: submitting does not save a message or create an account.</small></p>
+                    </section>
+                </form>
+            </main>
+            <footer>
+                <p><b>Thank you for visiting Milktea!</b></p>
+                <p>Coding Activity 13 | HTML Forms</p>
+                <a href="#top">Back to Top</a>
+            </footer>
+        </div>
+    </body>
+</html>

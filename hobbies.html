@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milktea | Hobbies and Favorites</title>
+    <style>
+
+        body{
+                background-image: url(gallery/weird-cat-bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                align: center;
+                margin:0; 
+                color:#750014; 
+                font-family:Tahoma, sans-serif; 
+                justify-content: center;
+            }
+
+            /*================
+            [    NAV BAR    ]
+            ================*/
+
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: pink;
+                display: flex;
+                justify-content: center;
+            }
+
+            ul li {
+              float: left;
+            }
+
+            ul li a {
+              display: block;
+              color: black;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            ul li a:hover {
+              background-color: #750014;
+              color:floralwhite;
+            }
+
+            .guest{
+                background-color: lightyellow;
+            }
+
+            /*===============================
+            [      END OF  NAV BAR        ]
+            ===============================*/
+            a {
+                 scroll-behavior: smooth;
+            }
+
+            .page { 
+                max-width:1000px; 
+                margin:auto;
+                padding:24px; 
+            }
+        
+            h1, h2, .intro {
+                text-align:center; }
+
+            h1 {        
+                font-family:Georgia, serif; 
+                font-size:36px; }
+
+            .card { 
+                background-color:floralwhite; 
+                border:2px solid pink; 
+                border-radius:16px; 
+                padding:20px; 
+                margin:24px 0; 
+
+            }
+
+            .table-scroll { 
+                overflow-x:auto; }
+
+            table { 
+                width:800px; 
+                margin: 0 auto;
+                border-collapse:collapse; 
+                background-color:white; }
+
+            th, td { 
+                border:2px solid #b66d7d;
+                padding:12px; 
+                text-align:left; }
+
+            th { 
+                background-color:pink; }
+
+            .heading-row { 
+                height:60px; }
+
+            .footer-cell { 
+                text-align:center; 
+                background-color:lavenderblush; }
+
+            .collage { 
+                display:block; 
+                width:180px; 
+                height:auto; 
+                margin:auto; }
+
+            .menu { 
+                text-align:center; 
+                line-height:2; }
+                
+            a { 
+                color:#750014; }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- =================================================
+             |              NAV BAR                          |
+             ================================================= -->
+        <ul id="nav-bar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="gallery.html">MY GALLERY</a></li>
+            <li><a href="hobbies.html">MY HOBBY</a></li>
+            <li><a href="goals.html">MY GOALS</a></li>
+            <li><a href="works.html">MY WORKS</a></li>
+            <li><a href="blog.html">MY BLOG</a></li>
+            <li class="guest"><a href="guest.html">TALK WITH ME~OW</a></li>
+        </ul>
+        <!--===============================================-->
+
+        <h1 id="top" >My Personal Hobbies &amp; Favorite Leaderboard</h1>
+
+        <p class="intro">
+            Hi, I'm Milktea! Here are a few of my favorite things, arranged in four little leaderboards.
+        </p>
+
+        <p class="menu">
+            <a href="#table1">Hobbies</a> | 
+            <a href="#table2">Treats</a> | 
+            <a href="#table3">Places</a> | 
+            <a href="#table4">Memories</a>
+        </p>
+
+        <div class="card" id="table1">
+            <h2>My Favorite Hobbies</h2>
+            <div class="table-scroll">
+            <table>
+                <tr class="heading-row">
+                    <th style="width:60px;">Rank</th>
+                    <th style="width:180px;">Hobby</th>
+                    <th style="width:150px;">Category</th>
+                    <th style="width:150px;">Favorite Time</th>
+                    <th style="width:260px;">Why I Like It</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Watching birds</td>
+                    <td rowspan="2">Quiet time</td>
+                    <td>Morning</td>
+                    <td>The window is my favorite spot.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Taking naps</td>
+                    <td>Afternoon</td>
+                    <td>Soft pillows make me happy.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Playing with toys</td>
+                    <td rowspan="2">Playtime</td>
+                    <td>Evening</td>
+                    <td>I enjoy chasing things.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Exploring boxes</td>
+                    <td>Anytime</td>
+                    <td>Every box is a new adventure.</td>
+                </tr>
+                <tr><td colspan="5" class="footer-cell">Milktea's my favorite hobbies — four favorites worth remembering!</td></tr>
+            </table>
+            </div>
+        </div>
+        <div class="card" id="table2">
+            <h2>My Favorite Treats</h2>
+            <div class="table-scroll">
+            <table>
+                <tr class="heading-row">
+                    <th style="width:60px;">Rank</th>
+                    <th style="width:180px;">Treat</th>
+                    <th style="width:150px;">Type</th>
+                    <th style="width:150px;">Occasion</th>
+                    <th style="width:260px;">My Rating</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Cat treats</td>
+                    <td>Snack</td>
+                    <td>Training time</td>
+                    <td>5 out of 5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wet cat food</td>
+                    <td>Meal</td>
+                    <td>Mealtime</td>
+                    <td>5 out of 5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dry cat food</td>
+                    <td>Meal</td>
+                    <td>Mealtime</td>
+                    <td>4 out of 5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Fresh water</td>
+                    <td>Drink</td>
+                    <td>Every day</td>
+                    <td>Always welcome</td>
+                </tr>
+                <tr><td colspan="5" class="footer-cell">Milktea's my favorite treats — four favorites worth remembering!</td></tr>
+            </table>
+            </div>
+        </div>
+        <div class="card" id="table3">
+            <h2>My Favorite Places</h2>
+            <div class="table-scroll">
+            <table>
+                <tr class="heading-row">
+                    <th style="width:60px;">Rank</th>
+                    <th style="width:180px;">Place</th>
+                    <th style="width:150px;">Activity</th>
+                    <th style="width:150px;">Best Time</th>
+                    <th style="width:260px;">Favorite Detail</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Window corner</td>
+                    <td>Watching birds</td>
+                    <td>Morning</td>
+                    <td>A view of the outdoors</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Soft bed</td>
+                    <td>Sleeping</td>
+                    <td>Afternoon</td>
+                    <td>A comfortable pillow</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Cardboard box</td>
+                    <td>Exploring</td>
+                    <td>Evening</td>
+                    <td>My own little hideaway</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Beside my human</td>
+                    <td>Relaxing</td>
+                    <td>Night</td>
+                    <td>Good company</td>
+                </tr>
+                <tr><td colspan="5" class="footer-cell">Milktea's my favorite places — four favorites worth remembering!</td></tr>
+            </table>
+            </div>
+        </div>
+        <div class="card" id="table4">
+            <h2>My Favorite Memories</h2>
+            <div class="table-scroll">
+            <table>
+                <tr class="heading-row">
+                    <th style="width:60px;">Rank</th>
+                    <th style="width:180px;">Memory</th>
+                    <th style="width:150px;">Companion</th>
+                    <th style="width:150px;">Place</th>
+                    <th style="width:260px;">Why It Is Special</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>A cozy afternoon</td>
+                    <td>Pearly</td>
+                    <td>Our resting spot</td>
+                    <td>We enjoyed a quiet nap.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Window watching</td>
+                    <td>Bonsai</td>
+                    <td>By the window</td>
+                    <td>We watched the world together.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Photo time</td>
+                    <td>My human</td>
+                    <td>At home</td>
+                    <td>My human made this collage.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>A playful evening</td>
+                    <td>My cat friends</td>
+                    <td>At home</td>
+                    <td>We had fun together.</td>
+                </tr>
+                <tr><td colspan="5" class="footer-cell">Milktea's my favorite memories — four favorites worth remembering!</td></tr>
+            </table>
+            </div>
+        </div>
+        <div class="card">
+            <h2 style="text-align:center;">A Page from My Photo Scrapbook</h2>
+            <img class="collage" src="gallery/milktea-collage.png" alt="Milktea's collage with Pearly and Bonsai" width="566" height="2048">
+            <p class="intro">Milktea, Pearly, and Bonsai — my favorite photo memories.</p>
+        </div>
+        <p class="intro"><a href="#top">Back to Top</a></p>
+        <p class="intro"><i>Created for Coding Activity 10: HTML Tables</i></p>
+    </div>
+</body>
+</html>

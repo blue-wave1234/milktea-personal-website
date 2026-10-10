@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Coding Activity 9</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f6eadc;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .corkboard {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1152 / 1627;
+            margin: 0 auto;
+            background-image: url("gallery/about-me.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        
+        .board-content {
+            position: absolute;
+            top: 3%;
+            left: 7.5%;
+            right: 7.5%;
+            bottom: 6%;
+            overflow: auto;
+        }
+
+        #nav-bar {
+            list-style-type: none;
+            margin: 0;
+            padding: 8px 8px 28px;
+            background-image: url("gallery/ribbon.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #nav-bar a {
+            display: block;
+            padding: 12px 14px;
+            color: #552735;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #nav-bar a:hover,
+        #nav-bar a:focus-visible {
+            background-color: #ffb9cb;
+        }
+
+        .guest a{
+            color: black;
+        }
+
+
+        h1 { 
+            font-family: monospace;
+            text-align: center; 
+            color: #750014; 
+            -webkit-text-stroke: white 2px;
+            margin-top: 0px;
+            font-size: 50px;
+
+        }
+
+        img {
+            float: left;
+            width: 33%;
+            height: auto;
+            margin-right: 3%;
+        }
+
+        .hi {
+            display: flow-root;
+            margin: 0;
+            padding: 20px;
+            font-family: Tahoma, sans-serif;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #750014;
+            background-color: white;
+            border-radius: 15px;
+        }
+    
+        .profile-photo { 
+            float:left; 
+            width:33%; 
+            height:auto; 
+            margin-right:3%; 
+        }
+        .button-link { 
+            display:inline-block; 
+            padding:12px 18px; 
+            background-color:#750014; 
+            color:white; 
+            text-decoration:none; 
+            border-radius:8px; 
+        }
+        .button-link:hover { 
+            background-color:#552735; 
+        }
+        .hi a:not(.button-link) { 
+            color:#750014; 
+        }
+        @media (max-width:600px) {
+                h1 { 
+                    font-size:30px; }
+                .hi { 
+                    font-size:16px; padding:14px; }
+                #nav-bar a { 
+                    padding:10px; font-size:14px; }
+                .profile-photo { 
+                    float:none; width:70%; 
+                    display:block; 
+                    margin:0 auto 20px; }
+        }
+</style>
+</head>
+<body>
+    <div class="corkboard">
+        <div class="board-content">
+            <ul id="nav-bar">
+                <li><a href="index.html" title="Know more about me">HOME</a></li>
+                <li><a href="gallery.html" title="See Milktea's photo collection">MY GALLERY</a></li>
+                <li><a href="goals.html" title="what do i wanit in life">MY GOALS</a></li>
+                <li><a href="hobbies.html" title="Enjoy with me">MY HOBBY</a></li>
+                <li><a href="works.html" title="My greatest work">MY WORKS</a></li>
+                <li><a href="blog.html" title="Listem to my thoughts">MY BLOG</a></li>
+                <li class="guest"><a href="guest.html">TALK WITH ME~OW</a></li>
+            </ul>
+          
+            <h1>About Me</h1>
+            
+            <a href="gallery.html" title="Click my collage to visit My Gallery">
+                <img class="profile-photo" src="gallery/milktea-collage.png" alt="Milktea with Pearly and Bonsai" width="566" height="2048">
+            </a>
+            <div class="hi">
+                <h2>Hi, I'm Milktea!</h2>
+                <p>Welcome to my little corner of the corkboard! I am a curious cat who enjoys cozy naps and spending time with my friends and Mom</p>
+                <p>My collage shows some of our favorite moments together. Click it to explore my gallery!</p>
+
+                <h2 id="hobbies">My Hobbies</h2>
+                <ul><li>Napping in comfortable places</li><li>Watching the world through the window</li><li>Spending time with my cat friends</li></ul>
+                <p><a class="button-link" href="hobbies.html" title="View my photo collage">Learn More</a></p>
+
+                <h2>My Favorite Website</h2>
+                <p><a href="https://cat-bounce.com/">Visit Cat Bounce</a> to see cat bouncing.</p>
+                <p><a href="https://www.facebook.com/vanessa.jane.villamayor" target="_blank" rel="noopener" title="Open HTML tutorials in a new tab">Learn more about My Human</a> 
+                <p><a href="gallery.html">Visit My Gallery</a> to see my collage.</p>
+                <!-- Requirement 5: Example email; replace with your own. -->
+
+                <h2>Contact Me</h2>
+                <p><a href="mailto:vanessajane.villamayor@deped.gov.com">Email my human</a></p>
+                <p><small>Talk to her if you want to giev me treats!!!</small></p>
+                <!-- Requirement 8: An anchor styled as a button. -->
+                
+                <h2 id="works">My Work</h2>
+                <p>This personal webpage is my output for Coding Activity 9.</p>
+                <p><a class="button-link" href="gallery.html" title="View my photo collage">Explore My Works</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Milktea | My Goals and Dreams</title>
+        <style>
+            body{
+                background-image: url(gallery/goals-bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                align: center;
+                margin:0; 
+                color:#750014; 
+                font-family:Tahoma, sans-serif; 
+                justify-content: center;
+               font-size:18px;
+                line-height:1.6; }
+
+            .page { 
+                max-width:950px; 
+                margin:0 auto; 
+                padding:24px; 
+                }
+
+                /*================
+                [    NAV BAR    ]
+                ================*/
+
+            .nav-bar ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: pink;
+                display: flex;
+                justify-content: center;
+            }
+
+            .nav-bar ul li {
+              float: left;
+            }
+
+            .nav-bar ul li a {
+              display: block;
+              color: black;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            .nav-bar ul li a:hover {
+              background-color: #750014;
+              color:floralwhite;
+            }
+
+            .guest{
+                background-color: lightyellow;
+            }
+
+            /*===============================
+            [      END OF  NAV BAR        ]
+            ===============================*/
+            a {
+                 scroll-behavior: smooth;
+            }
+
+            h1, h2 { 
+                font-family:Georgia, serif; }
+
+            h1 { 
+                text-align:center; 
+                font-size:38px; 
+                line-height:1.2; }
+
+            .intro, .bookmarks, .footer { 
+                text-align:center; }
+
+            .bookmarks { 
+                line-height:2; }
+           
+            .goal-card { 
+                background-color:floralwhite; 
+                border:2px solid pink; 
+                border-radius:16px; 
+                padding:24px; 
+                margin:24px 0; }
+
+            /* This ID selector highlights only the dream-career section. */
+            #dream-career { 
+                background-color:#fff0f5; border:2px solid #b66d7d; }
+
+            .motivation { 
+                background-color:white; 
+                border:2px solid pink; 
+                border-radius:16px; 
+                padding:24px; 
+                margin:24px 0; }
+
+            .motivation img, #dream-career img { 
+                float: right;
+                width: 32%;
+                height: auto;
+                margin: 30px 0 16px 24px;
+                padding: 10px;
+            }
+
+            #school-goals img, #future-plans img{
+                float: left; 
+                width: 32%;
+                height: auto;
+                margin: 45px 20px 16px 24px;
+                padding: 10px;
+            }
+
+            .motivation-end { 
+                clear:both; }
+
+            .note { 
+                display: flow-root;
+                background-color:#fce3e8; 
+                padding:12px; }
+
+            .footer { 
+                padding:20px; }
+
+            @media (max-width:600px) {
+                .page { 
+                    padding:14px; }
+                h1 { 
+                    font-size:30px; }
+                .goal-card, .motivation {
+                    padding:18px; }
+                .motivation img, .goal-card img {
+                    float:none; 
+                    display:block; 
+                    width:65%; 
+                    margin:0 auto 20px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page" id="top">
+            <div id="nav-bar" class="nav-bar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">MY GALLERY</a></li>
+                    <li><a href="hobbies.html">MY HOBBY</a></li>
+                    <li><a href="goals.html">MY GOALS</a></li>
+                    <li><a href="works.html">MY WORKS</a></li>
+                    <li><a href="blog.html">MY BLOG</a></li>
+                    <li class="guest"><a href="guest.html">TALK WITH ME~OW</a></li>
+
+                </ul>
+            </div>
+
+            <h1>My Goals and Dreams</h1>
+            <p class="intro">Small paws. Big dreams. One little step at a time.</p>
+            <!-- Each bookmark points to a unique ID on this page. -->
+            <p class="bookmarks">
+                <a href="#school-goals">My School Goals</a> |
+                <a href="#dream-career">My Dream Career</a> |
+                <a href="#future-plans">My Future Plans</a>
+            </p>
+
+            <div class="motivation">
+                <img src="gallery/do-it.jpg" alt="A cat manifsting herself as a lion" width="736" height="1104">
+                <h2>A Little Reminder to Myself</h2>
+                <p>Hi, I'm Milktea! Sometimes a new challenge feels taller than I am. But just like the cat in this picture, I can keep trying.</p>
+                <p>In my imaginary cat school, I want to learn new things, make happy memories, and become a good friends to my classmates.</p>
+                <p><b>I do not have to reach every dream today. I just have to take my next little step.</b></p>
+                <p><i>My promise: try, practice, rest, and try again.</i></p>
+                <div class="motivation-end"></div>
+            </div>
+
+            <div class="goal-card" id="school-goals">
+                <img src="gallery/school.jpg" alt="Studying Cat" width="auto" height="350px">
+                <h2>01 — My School Goals</h2>
+                <p>My first goal is to become a curious learner. I want to listen carefully, practice new skills, and finish the activities I start. When something is difficult, I will ask for help and give it another try.</p>
+                <ul>
+                    <li>Learn one new thing each day.</li>
+                    <li>Practice instead of giving up after one mistake.</li>
+                    <li>Be kind to my classmates, Pearly and Bonsai.</li>
+                </ul>
+                <p class="note"><b>My first step:</b> Spend a little time practicing before taking my next nap.</p>
+                <a href="#top">Back to Top</a>
+            </div>
+
+            <div class="goal-card" id="dream-career">
+                <img src="gallery/career.jpg" alt="Studying Cat" width="auto" height="350px">
+                <h2>02 — My Dream Career</h2>
+                <p>I dream of becoming the Chief Comfort Officer of a cozy home. My job would be to keep my human company, welcome my cat friends, and remind everyone to take a break. I want to make every ordinary day feel a little warmer.</p>
+                <ul>
+                    <li>Offer excellent nap-time company.</li>
+                    <li>Check every cardboard box for comfort.</li>
+                    <li>Bring smiles to my human and friends.</li>
+                </ul>
+                <p class="note"><b>My first step:</b> Practice being a patient, gentle companion.</p>
+                <a href="#top">Back to Top</a>
+            </div>
+
+            <div class="goal-card" id="future-plans">
+                <img src="gallery/plan.jpg" alt="Studying Cat" width="auto" height="350px">
+                <h2>03 — My Future Plans</h2>
+                <p>In the future, I hope to have a sunny window, a soft bed, and plenty of time with the ones I love. I want to fill my scrapbook with new memories. Most of all, I want to keep growing into a happy and brave little cat.</p>
+                <ol>
+                    <li>Explore a new cozy corner at home.</li>
+                    <li>Take more photos with Pearly and Bonsai.</li>
+                    <li>Keep adding stories to my personal website.</li>
+                </ol>
+                <p class="note"><b>My first step:</b> Make one happy memory today.</p>
+                <a href="#top">Back to Top</a>
+            </div>
+
+            <div class="footer">
+                <p><b>One paw forward is still progress.</b></p>
+                <p>Made with love by Milktea | Coding Activity 11</p>
+                <a href="#top">Back to Top</a>
+            </div>
+        </div>
+    </body>
+</html>
